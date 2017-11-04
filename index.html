@@ -15,42 +15,43 @@
     <script src="/js/jquery.2.2.4.min.js"></script>
 </head>
 <body>
-	<header class="header">
-	   <div class="container">
-			<nav class="header__nav">
-				<ul class="header__ul">
-					<li><a class="nav_a" href="#main">Главная</a></li>
-					<li><a class="plan" href="#">планировка</a></li>
-					<li><a class="about-us" href="#">о застройщике</a></li>
-					<li class="header__li-logo">
-						<a class="logo-wrap" href="/">
-							<img src="img/logo.png" alt="">
-							<img class="logo-small" src="img/logo-small.png" alt="">
-						</a>
-					</li>
-					<li><a class="hod_build" href="#hod">Ход строительства</a></li>
-					<li><a class="news_a" href="#">новости</a></li>
-					<li><a class="nav_a" href="#contacts">контакты</a></li>
-				</ul>
-			</nav>
-	   </div>
-	   <div class="phone">
-		<div class="icn-phone">
-			<img src="img/phone.png" alt="">
-		</div>
-		<div class="phone-text">
-			<a href="tel:89883054545">
-				8 988 305 45 45
-			</a>
-			<a href="tel:919383">
-				919-383
-			</a>
-		</div>
-	   </div>
-	   <div id="mob_menu" class="mob_menu">
-	   		Меню
-	   </div>
-	</header>
+<header class="header">
+   <div class="container">
+		<nav class="header__nav">
+			<ul class="header__ul">
+				<li><a class="nav_a" href="#main">Главная</a></li>
+				<li><a class="page-load plan" data-page="plan.html" data-page-name="plan" href="#">планировка</a></li>
+				<li><a class="page-load about-us" data-page="about.html" data-page-name="about" href="#">о застройщике</a></li>
+				<li class="header__li-logo">
+					<a class="logo-wrap" href="/">
+						<img src="img/logo.png" alt="">
+						<img class="logo-small" src="img/logo-small.png" alt="">
+					</a>
+				</li>
+				<li><a class="page-load hod_build" data-page="building.html" data-page-name="building" href="#">Ход строительства</a></li>
+				<li><a class="page-load news_a" data-page="news" data-page-name="news" href="#">новости</a></li>
+				<li><a class="nav_a" href="#contacts">контакты</a></li>
+			</ul>
+		</nav>
+   </div>
+   <div class="phone">
+	<div class="icn-phone">
+		<img src="img/phone.png" alt="">
+	</div>
+	<div class="phone-text">
+		<a href="tel:89883054545">
+			8 988 305 45 45
+		</a>
+		<a href="tel:919383">
+			919-383
+		</a>
+	</div>
+   </div>
+   <div id="mob_menu" class="mob_menu">
+		Меню
+   </div>
+</header>
+<span class="wrap-main">
 	<section id="main" class="sec_1">
 		<div class="svg-wrap">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -838,11 +839,9 @@
    								</div>
    							</div>
    						</div>
-   						<a href="#votcallback">
-							<button type="button" class="btn-call clCallTrackingPoint btn-call-onmain">
-								ЗАКАЗАТЬ ЗВОНОК
-							</button>
-						</a>
+						<button type="button" class="btn-call">
+							ЗАКАЗАТЬ ЗВОНОК
+						</button>
    					</div>
    				</div>
    			</div>
@@ -872,11 +871,11 @@
 			</li>
         </ul>
     </div>
-    <script src="/slick-1.6.0/slick/slick.min.js"></script>
-    <script src="/jquery_lazyload-2.x/lazyload.min.js"></script>
-    <script src="/fancybox-master/dist/jquery.fancybox.min.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-	<script id="c4s_js_71472a3b0eb46d7348b5dcdfa89673ba" type="text/javascript" src="http://www.votbox.ru/c4s/widget.72081.71472a3b0eb46d7348b5dcdfa89673ba.js"></script>
+</span>
+<script src="/slick-1.6.0/slick/slick.min.js"></script>
+<script src="/jquery_lazyload-2.x/lazyload.min.js"></script>
+<script src="/fancybox-master/dist/jquery.fancybox.min.js"></script>
+<script src="/js/script.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </body>
 </html>

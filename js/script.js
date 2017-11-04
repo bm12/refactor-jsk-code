@@ -1,38 +1,7 @@
-window.onpopstate = function(event) {
-	if ( event.state != null ){
-		switch(event.state.page){
-			case 'plan':
-				$('body').attr('data-toplan','1');
-				$('.header__nav .plan').trigger('click');
-				console.log(event.state.page);
-				break;
-			case 'news':
-				$('body').attr('data-toplan','1');
-				$('.header__nav .news_a').trigger('click');
-				console.log(event.state.page);
-				break;
-			case 'hod':
-				$('body').attr('data-toplan','1');
-				$('.header__nav .hod_build').trigger('click');
-				console.log(event.state.page);
-				break;
-			case 'about':
-				$('body').attr('data-toplan','1');
-				$('.header__nav .about-us').trigger('click');
-				console.log(event.state.page);
-				break;
-		}
-	}else{
-		if ( location.hash.match('#votcallback') === null){
-			$('.header__nav .nav_a:first-child').click();
-		}
-		console.log(event.state);
-	}
-};
 history.pushState(null, "", " ");
 $(document).ready(function() {
-	var headerH = $('header.header').height();
-	var offset = $('#fixed').offset();
+	let headerH = $('header.header').height();
+	let offset = $('#fixed').offset();
 	
 	
 	$('.slick-slider').slick({
@@ -47,14 +16,14 @@ $(document).ready(function() {
 	});
 	
 	function RunMaps(x,y) {
-        var myMap;
+        let myMap;
         ymaps.ready(init); // Ожидание загрузки API с сервера Яндекса
         function init () {
             myMap = new ymaps.Map("map", {
               center: [x, y], // Координаты центра карты
               zoom: 16 // Zoom
             });
-            var myPlacemark = new ymaps.GeoObject({
+            let myPlacemark = new ymaps.GeoObject({
                 geometry: {
                 type: "Point",
                 coordinates: [x, y]
@@ -118,139 +87,85 @@ $(document).ready(function() {
 		}
 	});
 	
-	$('.plan').click(function(e) {
-		if ($('.planirovka_wrap').length){
-			e.preventDefault();
+	/*
+	*
+	* checking for a match to the current page
+	* проверка на совпадение с текущей страницей
+	*
+	*/
+	function isCurrentPage(pageName) {
+		return $('.other_page').attr('data-curr-page') === pageName;
+	}
+	
+	/*
+	*
+	*
+	* запись перехода в историю
+	*
+	*/
+	function updateState(page, pageName) {
+		var stateObj = {
+			page: page,
+			pageName: pageName 
+		};
+		history.pushState(stateObj, "", '/page/'+pageName);
+	}
+	
+	
+	/*
+	*
+	*
+	*загрузка страниц меню
+	*
+	*/
+	function loadPage(page, pageName) {
+		$.ajax({
+			type: 'GET',
+			url: '/page/'+page,
+			beforeSend: function() {
+				$('body').addClass('other');
+				$('.wrap-main').fadeOut(400);
+				$('body').append('<img class="preloader" src="/slick-1.6.0/slick/ajax-loader.gif">');
+			},
+			success: function(data) {
+				$('.preloader').remove();
+				setTimeout(function() {
+					$('.other_page').remove();
+					$('body').append(data);
+					svgView()
+					$('.other_page').fadeIn(300).attr('data-curr-page', pageName);
+				}, 0)
+			}
+		});
+	}
+	
+	function showMainPage() {
+		$('.other_page, .preloader').remove();
+		$('.wrap-main').fadeIn(400);
+	}
+	$(window).on('popstate', function(event) {
+		console.log(event.originalEvent);
+		let state = event.originalEvent.state;
+		
+		if ( state != null ){
+			loadPage(state.page, state.pageName);
 		}else{
-			e.preventDefault();
-			$.ajax({
-				type: 'GET',
-				url: 'php/plan.php',
-				beforeSend: function() {
-					$('body').addClass('other');
-					$('body>section, body>div, body>footer')
-						.not('.c4s-modal, .c4s-widget-btn-coral, .dont-touch, [id*=c4s]').fadeOut(400);
-					$('body').append('<img class="preloader" src="/slick-1.6.0/slick/ajax-loader.gif">');
-				},
-				success: function(data) {
-					
-					if ( !$('body').attr('data-toplan') ){
-						var stateObj = { page: "plan" };
-						history.pushState(stateObj, "", "");
-					}else{
-						$('body').removeAttr('data-toplan');
-					}
-					
-					
-					$('.preloader').remove();
-					setTimeout(function() {
-						$('.other_page').remove();
-						$('body').append(data);
-						svgView()
-						$('.planirovka_wrap').fadeIn(300);
-					}, 0)
-				}
-			});
+			showMainPage();
+			console.log(state);
 		}
 	});
-	$('.news_a').click(function(e) {
-		if ($('.news').length){
-			e.preventDefault();
-		}else{
-			e.preventDefault();
-			$.ajax({
-				type: 'GET',
-				url: 'php/news.php',
-				beforeSend: function() {
-					$('body').addClass('other');
-					$('body>section, body>div, body>footer')
-						.not('.c4s-modal, .c4s-widget-btn-coral, .dont-touch, [id*=c4s]').fadeOut(400);
-					$('body').append('<img class="preloader" src="/slick-1.6.0/slick/ajax-loader.gif">');
-				},
-				success: function(data) {
-					if ( !$('body').attr('data-toplan') ){
-						var stateObj = { page: "news" };
-						history.pushState(stateObj, "", "");
-					}else{
-						$('body').removeAttr('data-toplan');
-					}
-					
-					
-					$('.preloader').remove();
-					setTimeout(function() {
-						$('.other_page').remove();
-						$('body').append(data);
-						$('.news').fadeIn(300);
-					}, 0)
-				}
-			});
+	
+	$('.page-load').click(function(e) {
+		let page = $(this).data('page');
+		let pageName = $(this).data('page-name');
+		
+		
+		if ( !isCurrentPage(pageName) ) {
+			loadPage(page, pageName);
+			updateState(page, pageName);
 		}
-	});
-	$('.hod_build').click(function(e) {
-		if ($('.building-wrap').length){
-			e.preventDefault();
-		}else{
-			e.preventDefault();
-			$.ajax({
-				type: 'GET',
-				url: 'php/building.php',
-				beforeSend: function() {
-					$('body').addClass('other');
-					$('body>section, body>div, body>footer')
-					.not('.c4s-modal, .c4s-widget-btn-coral, .dont-touch, [id*=c4s]').fadeOut(400);
-					$('body').append('<img class="preloader" src="/slick-1.6.0/slick/ajax-loader.gif">');
-				},
-				success: function(data) {
-					if ( !$('body').attr('data-toplan') ){
-						var stateObj = { page: "hod" };
-						history.pushState(stateObj, "", "");
-					}else{
-						$('body').removeAttr('data-toplan');
-					}
-					
-					
-					$('.preloader').remove();
-					setTimeout(function() {
-						$('.other_page').remove();
-						$('body').append(data);
-						$('.building-wrap').fadeIn(300);
-					}, 0)
-				}
-			});
-		}
-	});
-	$('.about-us').click(function(e) {
-		if ($('.about').length){
-			e.preventDefault();
-		}else{
-			e.preventDefault();
-			$.ajax({
-				type: 'GET',
-				url: 'php/about.php',
-				beforeSend: function() {
-					$('body').addClass('other');
-					$('body>section, body>div, body>footer')
-					.not('.c4s-modal, .c4s-widget-btn-coral, .dont-touch, [id*=c4s]').fadeOut(400);
-					$('body').append('<img class="preloader" src="/slick-1.6.0/slick/ajax-loader.gif">');
-				},
-				success: function(data) {
-					if ( !$('body').attr('data-toplan') ){
-						var stateObj = { page: "about" };
-						history.pushState(stateObj, "", "");
-					}else{
-						$('body').removeAttr('data-toplan');
-					}
-					
-					
-					$('.preloader').remove();
-					setTimeout(function() {
-						$('.other_page').remove();
-						$('body').append(data);
-						$('.about').fadeIn(300);
-					}, 0)
-				}
-			});
-		}
+		
+		e.preventDefault();
 	});
 	
 	$('.nav_a').click(function(e) {
@@ -260,9 +175,7 @@ $(document).ready(function() {
 			$('.other_page').fadeOut(300,function() {
 				$('.other_page, .preloader').remove();
 				$('body').removeClass('other');
-				$('body>section, body>div, body>footer')
-					.not('.c4s-modal, .c4s-widget-btn-coral, .dont-touch, [id*=c4s]')
-					.fadeIn(300);
+				$('.wrap-main').fadeIn(400);
 				setTimeout(function() {
 					baloonInit();
 					var destination = $(elementClick).offset().top;
