@@ -1,0 +1,13 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 806 572">
+  <title>plan_9_floor</title>
+  <image width="806" height="572" xlink:href="plan_9_floor.png"/>
+  <polygon points="39 0 39 203 4 203 4 286 204 286 204 0 39 0" style="fill: none"/>
+  <polygon points="39 572 39 369 4 369 4 286 204 286 204 572 39 572" style="fill: none"/>
+  <polygon points="764.67 572 764.67 369 799.67 369 799.67 286 599.67 286 599.67 572 764.67 572" style="fill: none"/>
+  <polygon points="204 0 366 0 366 263 236 263 237 249 204 248 204 0" style="fill: none"/>
+  <polygon points="204 568.5 366 568.5 366 305.5 236 305.5 237 319.5 204 320.5 204 568.5" style="fill: none"/>
+  <rect x="366" width="154" height="263" style="fill: none"/>
+  <polygon points="520 266 520 0 677 0 677 203.33 598.5 204 598.5 251.33 569 250.67 568.17 266 520 266" style="fill: none"/>
+  <polygon points="677 0 766.33 0 766.33 203.33 799.67 203.33 799.67 286 598.5 286 598.5 248 598.5 204 677 203.33 677 0" style="fill: none"/>
+  <polygon points="499.67 305.5 567.67 305.5 567.67 322.67 599.67 322.67 599.67 572 437 568.5 437 360 500.33 361.33 499.67 305.5" style="fill: none"/>
+</svg>

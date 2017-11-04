@@ -1,0 +1,213 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2880 1660">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #04bb00;
+      }
+
+      .cls-2 {
+        fill: #d200ff;
+      }
+
+      .cls-3 {
+        fill: #00a2ff;
+      }
+
+      .cls-4 {
+        fill: #d71e29;
+      }
+
+      .cls-5 {
+        fill: #ff7e00;
+      }
+
+      .cls-6 {
+        fill: #ffba00;
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        font-size: 18.94px;
+      }
+
+      .cls-13, .cls-19, .cls-26, .cls-31, .cls-36, .cls-8 {
+        font-family: Roboto;
+		font-weight: 400;
+      }
+
+      .cls-9 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-10 {
+        letter-spacing: -0.04em;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+
+      .cls-12 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-13 {
+        font-size: 18px;
+      }
+
+      .cls-14 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-15 {
+        letter-spacing: 0em;
+      }
+
+      .cls-16 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-17 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-18 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-19 {
+        font-size: 21.09px;
+      }
+
+      .cls-20 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-21 {
+        letter-spacing: 0em;
+      }
+
+      .cls-22 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-23 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-24 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-25 {
+        letter-spacing: 0em;
+      }
+
+      .cls-26 {
+        font-size: 19.42px;
+      }
+
+      .cls-27 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-28 {
+        letter-spacing: 0em;
+      }
+
+      .cls-29 {
+        letter-spacing: -0.04em;
+      }
+
+      .cls-30 {
+        letter-spacing: -0.04em;
+      }
+
+      .cls-31 {
+        font-size: 22.03px;
+      }
+
+      .cls-32 {
+        letter-spacing: -0.04em;
+      }
+
+      .cls-33 {
+        letter-spacing: 0em;
+      }
+
+      .cls-34 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-35 {
+        letter-spacing: -0.04em;
+      }
+
+      .cls-36 {
+        font-size: 18.94px;
+      }
+
+      .cls-37 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-38 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <image id="image" width="59" height="42" xlink:href="icn-horse.png"/>
+  </defs>
+  <title>bg-sec1</title>
+  <image width="2880" height="1660" xlink:href="bg-sec1.png"/>
+  <g>
+    <path id="SvgjsPath1007" class="cls-1" d="M1658.68,878.59c20.81,0,37.68,17.33,37.68,38.72S1658.68,973,1658.68,973,1621,938.69,1621,917.31,1637.87,878.59,1658.68,878.59Z"/>
+    <use transform="translate(1632.15 896.9) scale(0.9)" xlink:href="#image"/>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-2" data-name="SvgjsPath1007" class="cls-2" d="M2492.64,547.1c20.81,0,37.68,17.33,37.68,38.72s-37.68,55.68-37.68,55.68S2455,607.21,2455,585.82,2471.83,547.1,2492.64,547.1Z"/>
+    <use transform="translate(2466.11 568.41) scale(0.9)" xlink:href="#image"/>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-3" data-name="SvgjsPath1007" class="cls-3" d="M2159.66,386.8c20.81,0,37.68,17.33,37.68,38.72s-37.68,55.68-37.68,55.68S2122,446.91,2122,425.52,2138.85,386.8,2159.66,386.8Z"/>
+    <use transform="translate(2133.12 408.11) scale(0.9)" xlink:href="#image"/>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-4" data-name="SvgjsPath1007" class="cls-4" d="M1134,976.37c20.81,0,37.68,17.33,37.68,38.72s-37.68,55.68-37.68,55.68-37.68-34.29-37.68-55.68S1113.19,976.37,1134,976.37Z"/>
+    <use transform="translate(1107.47 997.68) scale(0.9)" xlink:href="#image"/>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-5" data-name="SvgjsPath1007" class="cls-5" d="M754.52,379.8c20.81,0,37.68,17.33,37.68,38.72s-37.68,55.68-37.68,55.68-37.68-34.29-37.68-55.68S733.71,379.8,754.52,379.8Z"/>
+    <use transform="translate(727.99 401.11) scale(0.9)" xlink:href="#image"/>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-6" data-name="SvgjsPath1007" class="cls-6" d="M1270.2,566.6c20.81,0,37.68,17.33,37.68,38.72S1270.2,661,1270.2,661s-37.68-34.29-37.68-55.68S1249.39,566.6,1270.2,566.6Z"/>
+    <use transform="translate(1243.67 587.3) scale(0.9)" xlink:href="#image"/>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-7" data-name="SvgjsPath1007" class="cls-7" d="M1107,500.7h334a10.69,10.69,0,0,1,10.69,10.69v28.5A10.69,10.69,0,0,1,1441,550.57H1319.09c-5.07,0-21.68,16-26.85,16,.18-.11,7-16,1.78-16H1107a10.69,10.69,0,0,1-10.69-10.69v-28.5A10.69,10.69,0,0,1,1107,500.7Z"/>
+    <text class="cls-8" transform="translate(1114.23 534.65)">Д<tspan class="cls-9" x="14.24" y="0">е</tspan><tspan class="cls-10" x="24.17" y="0">т</tspan><tspan class="cls-11" x="32.54" y="0">ская развлек</tspan><tspan class="cls-12" x="150.65" y="0">а</tspan><tspan class="cls-10" x="160.8" y="0">т</tspan><tspan x="169.16" y="0">ельная площадка</tspan></text>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-8" data-name="SvgjsPath1007" class="cls-7" d="M1545,808.56h249c4.4,0,8,4.87,8,10.87v29c0,6-3.57,10.87-8,10.87h-90.88c-3.78,0-16.17,16.31-20,16.31.13-.11,5.25-16.31,1.33-16.31H1545c-4.4,0-8-4.87-8-10.87v-29C1537,813.43,1540.59,808.56,1545,808.56Z"/>
+    <text class="cls-13" transform="translate(1573.08 842.08) scale(1.32 1)">Д<tspan class="cls-14" x="13.54" y="0">р</tspan><tspan class="cls-15" x="23.54" y="0">у</tspan><tspan class="cls-16" x="32.05" y="0">г</tspan><tspan x="39.43" y="0">ой за</tspan><tspan class="cls-17" x="83.47" y="0">г</tspan><tspan class="cls-18" x="90.84" y="0">о</tspan><tspan x="100.97" y="0">ловок</tspan></text>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-9" data-name="SvgjsPath1007" class="cls-7" d="M1034.17,907.41h228.71c4,0,7.32,4.92,7.32,11v29.28c0,6.06-3.28,11-7.32,11h-83.46c-3.47,0-14.85,16.47-18.39,16.47.12-.11,4.83-16.47,1.22-16.47H1034.17c-4,0-7.32-4.92-7.32-11V918.39C1026.86,912.33,1030.13,907.41,1034.17,907.41Z"/>
+    <text class="cls-19" transform="translate(1063.27 941.27)">Д<tspan class="cls-20" x="15.86" y="0">р</tspan><tspan class="cls-21" x="27.57" y="0">у</tspan><tspan class="cls-22" x="37.55" y="0">г</tspan><tspan x="46.19" y="0">ой за</tspan><tspan class="cls-23" x="97.79" y="0">г</tspan><tspan class="cls-24" x="106.43" y="0">о</tspan><tspan class="cls-25" x="118.29" y="0">ловок</tspan></text>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-10" data-name="SvgjsPath1007" class="cls-7" d="M2056.5,324.45h240.8c4.26,0,7.71,4.53,7.71,10.11v27c0,5.58-3.45,10.11-7.71,10.11h-87.87c-3.66,0-15.63,15.17-19.36,15.17.13-.1,5.08-15.17,1.28-15.17H2056.5c-4.26,0-7.71-4.53-7.71-10.11v-27C2048.79,329,2052.24,324.45,2056.5,324.45Z"/>
+    <text class="cls-26" transform="translate(2073.33 355.63)"><tspan class="cls-27">К</tspan><tspan class="cls-28" x="12.22" y="0">омфо</tspan><tspan class="cls-29" x="62.86" y="0">р</tspan><tspan x="73" y="0">тные ква</tspan><tspan class="cls-30" x="155.85" y="0">р</tspan><tspan x="165.99" y="0">тиры</tspan></text>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-11" data-name="SvgjsPath1007" class="cls-7" d="M640.57,309.06h239c4.22,0,7.65,5.14,7.65,11.47v30.59c0,6.33-3.42,11.47-7.65,11.47h-87.2c-3.63,0-15.52,17.21-19.22,17.21.13-.12,5-17.21,1.27-17.21H640.57c-4.22,0-7.65-5.14-7.65-11.47V320.53C632.92,314.2,636.35,309.06,640.57,309.06Z"/>
+    <text class="cls-31" transform="translate(670.97 344.43)"><tspan class="cls-32">У</tspan><tspan class="cls-33" x="12.95" y="0">до</tspan><tspan class="cls-34" x="38.82" y="0">б</tspan><tspan x="50.81" y="0">ный п</tspan><tspan class="cls-35" x="111.51" y="0">о</tspan><tspan x="123.3" y="0">дьезд</tspan></text>
+  </g>
+  <g>
+    <path id="SvgjsPath1007-12" data-name="SvgjsPath1007" class="cls-7" d="M2426,486.28h167.65c3,0,5.36,4.42,5.36,9.86v26.3c0,5.45-2.4,9.86-5.36,9.86h-61.18c-2.55,0-10.89,14.79-13.48,14.79.09-.1,3.54-14.79.89-14.79H2426c-3,0-5.36-4.42-5.36-9.86v-26.3C2420.65,490.7,2423.05,486.28,2426,486.28Z"/>
+    <text class="cls-36" transform="translate(2468.98 516.69)">Пар<tspan class="cls-37" x="34.45" y="0">к</tspan><tspan class="cls-38" x="44.48" y="0">овка</tspan></text>
+  </g>
+</svg>

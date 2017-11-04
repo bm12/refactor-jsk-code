@@ -1,0 +1,71 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1081">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: 0.5;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #d70033;
+      }
+
+      .cls-4 {
+        font-size: 40px;
+        font-family: Roboto-Bold, Roboto;
+        font-weight: 700;
+      }
+
+      .cls-5 {
+        letter-spacing: -0.03em;
+      }
+
+      .cls-6 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-7 {
+        font-size: 15px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-8 {
+        letter-spacing: -0.04em;
+      }
+
+      .cls-9 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>plan_build_cokol</title>
+  <image width="1920" height="1081" xlink:href="plan_build.jpg"/>
+  <g>
+    <g id="SvgjsPath1017">
+      <rect class="cls-1" x="681" y="381.64" width="303" height="347.36" rx="8.19" ry="8.19"/>
+    </g>
+    <path id="SvgjsPath1023" class="cls-2" d="M689.19,381.64H975.81a8.19,8.19,0,0,1,8.19,8.19v331a8.19,8.19,0,0,1-8.19,8.19H689.19a8.19,8.19,0,0,1-8.19-8.19v-331A8.19,8.19,0,0,1,689.19,381.64Z"/>
+    <path id="SvgjsPath1024" class="cls-3" d="M984,708.53v12.28a8.19,8.19,0,0,1-8.19,8.19H689.19a8.19,8.19,0,0,1-8.19-8.19V708.53Z"/>
+    <text class="cls-4" transform="translate(722.37 548)">Цо<tspan class="cls-5" x="52.97" y="0">к</tspan><tspan class="cls-6" x="74.39" y="0">о</tspan><tspan x="96.7" y="0">льный</tspan></text>
+    <text class="cls-7" transform="translate(815.39 598.5)"><tspan class="cls-8">э</tspan><tspan class="cls-6" x="7.48" y="0">т</tspan><tspan x="14.57" y="0">аж</tspan></text>
+  </g>
+  <polygon class="cls-9" points="1002.5 930 1002.5 866.5 1023 866.5 1323.5 831.5 1323.5 880.75 1023 931 1002.5 930"/>
+  <polygon class="cls-9" points="1002.5 804 1002.5 866.5 1020.5 866.5 1323.5 831.5 1323.5 781.5 1023.5 805.5 1002.5 804"/>
+  <polygon class="cls-9" points="1002.5 804 1002.5 742.5 1022.67 744.33 1323.5 731.5 1323.5 781.5 1023.5 805.5 1002.5 804"/>
+  <polygon class="cls-9" points="1002.5 681.5 1002.5 742.5 1022.67 744.33 1323.5 731.5 1323.5 681.5 1023 681.5 1002.5 681.5"/>
+  <polygon class="cls-9" points="1002.5 619.5 1002.5 681.5 1023 681.5 1323.5 681.5 1323.5 632.5 1002.5 619.5"/>
+  <polygon class="cls-9" points="1002.5 559 1002.5 619.5 1022.34 620.3 1323.5 632.5 1323.5 582.33 1023.33 559 1002.5 559"/>
+  <polygon class="cls-9" points="1002.5 499 1002.5 559 1023.33 559 1323.5 582.33 1323.5 532.33 1023 496 1002.5 499"/>
+  <polygon class="cls-9" points="1002.5 438.67 1002.5 499 1023 496 1323.5 532.33 1323.5 482.67 1022.67 434.67 1002.5 438.67"/>
+  <polygon class="cls-9" points="1002.5 377.67 1002.5 438.67 1022.67 434.67 1323.5 482.67 1323.5 433.33 1023 373.67 1002.5 377.67"/>
+  <polygon class="cls-9" points="1002.5 318.5 1002.5 377.67 1023 373.67 1323.5 433.33 1323.5 381.64 1021.5 314.5 1002.5 318.5"/>
+  <polygon class="cls-9" points="1002.5 257 1002.5 318.5 1021.5 314.5 1323.5 381.64 1323.5 330 1023 253 1002.5 257"/>
+  <polygon class="cls-9" points="1002.5 194 1002.5 257 1023 253 1323.5 330 1323.5 282.5 1023.5 190.5 1002.5 194"/>
+  <polygon class="cls-9" points="1002.5 129.5 1002.5 194 1023.5 190.5 1323.5 282.5 1323.5 231.5 1023.5 123 1002.5 129.5"/>
+  <polygon class="cls-9" points="996.16 1059.27 1301.67 985.33 1301.67 938.33 1022.67 993.67 996.16 991.83 996.16 1059.27"/>
+  <polygon class="cls-9" points="1002.5 930 1002.5 991.33 1022.67 993.67 1323.5 934 1323.5 880.75 1023 931 1002.5 930"/>
+  <path id="SvgjsPath1027" class="cls-2" d="M962.17,547.67,984,525.84l21.83,21.83L984,569.5Z"/>
+</svg>
