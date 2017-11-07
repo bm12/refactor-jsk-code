@@ -87,41 +87,40 @@ $(document).ready(function() {
 		}
 	});
 	
-	/*
-	*
-	* checking for a match to the current page
-	* проверка на совпадение с текущей страницей
-	*
-	*/
+    /**
+	 *
+	 * checking for a match to the current page
+	 * проверка на совпадение с текущей страницей
+	 * @param {string} pageName
+	 */
 	function isCurrentPage(pageName) {
 		return $('.other_page').attr('data-curr-page') === pageName;
 	}
 	
-	/*
-	*
-	*
-	* запись перехода в историю
-	*
-	*/
+    /**
+     *
+     * запись перехода в историю
+     * @param {string} page
+     * @param {string} pageName
+     */
 	function updateState(page, pageName) {
 		var stateObj = {
 			page: page,
 			pageName: pageName 
 		};
-		history.pushState(stateObj, "", '/page/'+pageName);
+		history.pushState(stateObj, "", page);
 	}
 	
 	
-	/*
-	*
-	*
-	*загрузка страниц меню
-	*
-	*/
+    /**
+     * загрузка страниц меню
+     * @param {string} page
+     * @param {string} pageName
+     */
 	function loadPage(page, pageName) {
 		$.ajax({
 			type: 'GET',
-			url: '/page/'+page,
+			url: page,
 			beforeSend: function() {
 				$('body').addClass('other');
 				$('.wrap-main').fadeOut(400);
@@ -137,8 +136,11 @@ $(document).ready(function() {
 				}, 0)
 			}
 		});
-	}
-	
+    }
+
+    /**
+     * Отображение основноной страницы
+     */
 	function showMainPage() {
 		$('.other_page, .preloader').remove();
 		$('.wrap-main').fadeIn(400);
@@ -153,8 +155,11 @@ $(document).ready(function() {
 			showMainPage();
 			console.log(state);
 		}
-	});
-	
+    });
+
+    /**
+     * Переход на другие страницы по клику на соответ-е элементы меню
+     */
 	$('.page-load').click(function(e) {
 		let page = $(this).data('page');
 		let pageName = $(this).data('page-name');
@@ -178,6 +183,8 @@ $(document).ready(function() {
 				$('.wrap-main').fadeIn(400);
 				setTimeout(function() {
 					baloonInit();
+					updateState('/', '');
+					
 					var destination = $(elementClick).offset().top;
 					$('body, html').animate( { scrollTop: destination-headerH }, 1000 );
 				}, 301)
