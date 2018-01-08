@@ -35,7 +35,7 @@ $(document).ready(function() {
 	RunMaps(42.957352, 47.517645);
 	
 	$('body').on('mouseover','.plan_svg polygon.cls-14:not(.cls-cokol)',function(){
-		var floor = $(this).attr('data-floor');
+		let floor = $(this).attr('data-floor');
 		
 		$('.floor_current').html(floor);
 		if (floor >= 10) {
@@ -53,7 +53,7 @@ $(document).ready(function() {
 	
 	
 	$('body').on('click','.plan_svg polygon.cls-14',function() {
-		var floor = $(this).attr('data-floor');
+		let floor = $(this).attr('data-floor');
 		
 		$('.floor_info_wrapper').removeClass('cokol-choose');
 		if (floor == 0){
@@ -75,13 +75,13 @@ $(document).ready(function() {
 		e.preventDefault();
 		const mq1190 = window.matchMedia( "(max-width: 1190px)" );
 		
-		var rooms = $(this).attr('data-rooms');
-		var square = $(this).attr('data-square');
+		let rooms = $(this).attr('data-rooms');
+		let square = $(this).attr('data-square');
+		let destination = $('.flats_descr').offset().top;
 		
 		$('.flats_descr_room_count').html( rooms == 1 ? rooms+'-но' : rooms+'-ух' );
 		$('.flats_descr_square').html( square+' м<sup>2</sup>' );
 		
-		var destination = $('.flats_descr').offset().top;
 		if (mq1190.matches) {
 			$('body, html').animate( { scrollTop: destination-headerH }, 300 );
 		}
@@ -104,7 +104,7 @@ $(document).ready(function() {
      * @param {string} pageName
      */
 	function updateState(page, pageName) {
-		var stateObj = {
+		const stateObj = {
 			page: page,
 			pageName: pageName 
 		};
@@ -141,7 +141,7 @@ $(document).ready(function() {
     /**
      * Отображение основноной страницы
      */
-	function showMainPage() {
+	const showMainPage = () => {
 		$('.other_page, .preloader').remove();
 		$('.wrap-main').fadeIn(400);
 	}
@@ -174,7 +174,8 @@ $(document).ready(function() {
 	});
 	
 	$('.nav_a').click(function(e) {
-		var elementClick = $(this).attr("href");
+		const elementClick = $(this).attr("href");
+		let destination;
 		e.preventDefault();
 		if ( $('.other_page').length ) {
 			$('.other_page').fadeOut(300,function() {
@@ -185,12 +186,12 @@ $(document).ready(function() {
 					baloonInit();
 					updateState('/', '');
 					
-					var destination = $(elementClick).offset().top;
+					destination = $(elementClick).offset().top;
 					$('body, html').animate( { scrollTop: destination-headerH }, 1000 );
 				}, 301)
 			})
 		}else{
-			var destination = $(elementClick).offset().top;
+			destination = $(elementClick).offset().top;
 			$('body, html').animate( { scrollTop: destination-headerH }, 1000 );
 		}
 	});
