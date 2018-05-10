@@ -108,7 +108,7 @@ $(document).ready(function() {
 			page: page,
 			pageName: pageName 
 		};
-		history.pushState(stateObj, "", page);
+		history.pushState(stateObj, "", '');
 	}
 	
 	
