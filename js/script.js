@@ -124,7 +124,7 @@ $(document).ready(function() {
 			beforeSend: function() {
 				$('body').addClass('other');
 				$('.wrap-main').fadeOut(400);
-				$('body').append('<img class="preloader" src="/slick-1.6.0/slick/ajax-loader.gif">');
+				$('body').append('<img class="preloader" src="./slick-1.6.0/slick/ajax-loader.gif">');
 			},
 			success: function(data) {
 				$('.preloader').remove();
