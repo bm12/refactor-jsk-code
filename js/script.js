@@ -1,4 +1,11 @@
 history.pushState(null, "", " ");
+function preloadImg() {
+	var img = document.createElement('img');
+	img.src = '../plugins/slick-1.6.0/slick/ajax-loader.gif'
+}
+
+preloadImg();
+
 $(document).ready(function() {
 	let headerHeight = $('header.header').height();
 	let offset = $('#fixed').offset();
@@ -125,7 +132,7 @@ $(document).ready(function() {
 			beforeSend: function() {
 				$('body').addClass('other');
 				$('.wrap-main').fadeOut(400);
-				$('body').append('<img class="preloader" src="./slick-1.6.0/slick/ajax-loader.gif">');
+				$('body').append('<img class="preloader" src="./plugins/slick-1.6.0/slick/ajax-loader.gif">');
 			},
 			success: function(data) {
 				$('.preloader').remove();
